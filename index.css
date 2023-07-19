@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    width: 1200;
+    height: 70px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    display: flex;
+}
+.icon img{
+    width: 86.041px;
+    height: 50px;
+    
+}
+.icon p{
+    font-weight: 700;
+    margin-left: 2px;
+}
+span{
+    color: #FF42A5;
+}
+.nav-1, .jahidul, ul{
+    display: flex;
+      
+}
+.nav-1, .jahidul, li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.nav-1, .jahidul, li a{
+    text-decoration: none;
+    color: #424242;
+}
+.login-btn{
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 5px 40px;
+    font-weight: 500;
+    border-radius: 1px;
+
+}
+.one{
+    width: auto;
+    height:600px;
+    display: flex;
+    
+}
+.header-text{
+    width: 600px;
+    height: 550px;
+    text-align: center;
+    background-image: url(./images/Group14.png);
+    padding-top: 100px;
+}
+.header-text h1{
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.header-text p{
+    font-size: 10px;
+    color: #534C64;
+}
+.btn-1{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #FF42A5;
+}
+.btn-5{
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #4EC5F7;
+
+}
+.header-img img{
+    width: 600px;
+    height: 550px;
+}
+.head-1{
+    text-align: center;
+}
+.head-img{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.card img{
+    width:180px;
+    height: 220px;
+}
+.card-title{
+    width:180px;
+    height: auto;
+    
+}
+.three{
+    display: flex;
+    gap:10px ;
+    width:1200px;
+    height: 720px;
+}
+.mark-text{
+    max-width: 400px;
+    text-align: right;
+    margin-top: 100px;
+}
+.features img{
+    height: 70%;
+    margin-left: 90px;
+}
+.years-batch{
+    border-radius: 8px;
+    
+    width: 342px;
+    padding:0px;
+    
+    position: relative;
+    bottom: 300px;
+}
+footer{
+    margin-top: 40px;
+    background-color: #9977f7;
+    height: 250px;
+    width: 1200px;
+}
+.game{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.jihad{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 250px ;
+}
+.jahidul{
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+    
+}
+.last{
+    text-align: center;
+}
+.card-1{
+    
+    height: 70px ;
+    width: 200px;
+    border-radius: 40px;
+    display: flex;
+    padding: 1.5px;
+
+}
+.card-1:hover{
+    border: 1px solid red;
+    color: red;
+}
+
+.card-extra{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+@media screen and (max-width: 426px){
+    nav, .nav-1 ul, .head-img, .three{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 20px;
+
+    }
+    .nav-1 ul{
+        gap: 20px;
+    }
+    .one{
+        flex-direction:column-reverse ;
+    }
+    .header-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .header-text, .three{
+        width: auto;
+        height: auto;
+    }
+    .features img{
+        height: 30%;
+        margin-left: 40px;
+
+    }
+    .years-batch{
+        
+        
+        width: 160px;
+        padding:0px;
+        
+        position: relative;
+        bottom: 150px;
+    }
+    .card-extra{
+        margin-top: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    footer{
+        height: 700px;
+        width: 700px;
+
+    }
+    .jahidul{
+        margin-left: 0px;
+        grid-template-columns: repeat(2,1fr);
+        
+        
+    }
+    .jihad{
+        grid-template-columns: repeat(2,1r);
+        margin-left: 0px;
+    }
+    
+    
+}
