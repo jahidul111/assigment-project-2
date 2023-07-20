@@ -10,7 +10,8 @@ nav{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 .icon{
     display: flex;
@@ -27,17 +28,19 @@ nav{
 span{
     color: #FF42A5;
 }
-.nav-1, .jahidul, ul{
+.nav-1 ul{
     display: flex;
+    align-items: center;
+
       
 }
-.nav-1, .jahidul, li{
+.nav-1, .jahidul, .nav-2,.nav-3, li{
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
-.nav-1, .jahidul, li a{
+.nav-1, .jahidul,.nav-3, li a{
     text-decoration: none;
     color: #424242;
 }
@@ -45,8 +48,14 @@ span{
     background-color: rgba(11, 2, 35, 0.10);
     padding: 5px 40px;
     font-weight: 500;
-    border-radius: 1px;
-
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.login-btn img{
+    height:20px ;
+    width: 20px;
 }
 .one{
     width: auto;
@@ -114,49 +123,70 @@ span{
     gap:10px ;
     width:1200px;
     height: 720px;
+    justify-content: center;
 }
 .mark-text{
     max-width: 400px;
     text-align: right;
     margin-top: 100px;
 }
-.features img{
+.feature-img img{
     height: 70%;
-    margin-left: 90px;
+    margin-left: 0px;
 }
 .years-batch{
     border-radius: 8px;
-    
     width: 342px;
-    padding:0px;
-    
     position: relative;
     bottom: 300px;
 }
 footer{
     margin-top: 40px;
     background-color: #9977f7;
-    height: 250px;
-    width: 1200px;
+    height: 350px;
+    width: auto;
 }
 .game{
     padding-top: 20px;
     display: flex;
     justify-content: center;
+    gap: 10px;
 
 }
-.jihad{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 250px ;
+.game>h1{
+    font-weight: 800;
 }
-.jahidul{
-    margin-left: 250px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
+.nav-2 ul {
+    display: flex;
+}
+.nav-3 ul {
+    display: flex;
+}
+.jihad{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon{
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   
+}
+.footer-icon1{
+    display: flex;
+    gap: 40px;
+   
+}
+.footer-icon2{
+    display: flex;
+    gap: 40px;
     
-    
-    
+}
+
+.jahidul{ 
+    display: flex;
+    justify-content: center;
 }
 .last{
     text-align: center;
@@ -180,63 +210,66 @@ footer{
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
-
-@media screen and (max-width: 426px){
-    nav, .nav-1 ul, .head-img, .three{
+@media screen and (max-width: 426px) {
+    nav, .nav-1 ul, .head-img, .jihad, .jahidul, .footer-icon, .three{
         flex-direction: column;
+        justify-content: center;
+    }
+    .one{
+        flex-direction: column-reverse;
+    }
+    nav, .one{
+        height: auto;
+        width: 425px;
+        margin-top: 20px;
+        align-items: center;
+        
+    }
+    .card img,.card-title{
         height: auto;
         width: auto;
-        margin: 20px;
-
     }
     .nav-1 ul{
         gap: 20px;
     }
-    .one{
-        flex-direction:column-reverse ;
-    }
-    .header-img img{
-        width: 300px;
-        height: 300px;
-    }
-    .header-text, .three{
-        width: auto;
-        height: auto;
-    }
-    .features img{
-        height: 30%;
-        margin-left: 40px;
-
+    .feature-img img {
+        height: 50%;
+        width: 37%
     }
     .years-batch{
-        
-        
-        width: 160px;
-        padding:0px;
-        
+        border-radius: 8px;
+        width: 342px;
         position: relative;
-        bottom: 150px;
+        bottom: 115px;   
+    }
+    .card-1{
+        height: 70px ;
+        width: 150px;
+        border-radius: 40px;
+        display: flex;
+        padding: 1.5px;
     }
     .card-extra{
         margin-top: 10px;
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }
+    .game{
+        justify-content: center;
+    }
     footer{
-        height: 700px;
-        width: 700px;
+        margin-top: 40px;
+        background-color: #9977f7;
+        height: auto;
+        width: auto;
+    }
+    .footer-icon1, .footer-icon2{
+        justify-content: center;
+    }
+    .header-img img{
+        height: auto;
+        width: auto;
+    }
 
-    }
-    .jahidul{
-        margin-left: 0px;
-        grid-template-columns: repeat(2,1fr);
-        
-        
-    }
-    .jihad{
-        grid-template-columns: repeat(2,1r);
-        margin-left: 0px;
-    }
+    };
     
-    
-}
